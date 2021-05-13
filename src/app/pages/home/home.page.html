@@ -1,0 +1,31 @@
+<ion-content>
+  <div class="pattern-container center-container">
+
+    <div id="header">
+      <span class="intelli-title"><span id="part1">Intelli</span> <span id="part2">License</span></span>
+    </div>
+
+    <div id="content-container" *ngIf="core.lastScan">
+      <p>
+        Scan Result:<br/>
+        Barcode - {{core.lastScan.data}}<br/>
+        Type - {{core.lastScan.type}}<br/>
+      </p>
+      
+    </div>
+
+    <div id="content-container">
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" color="primary" (click)="goScan()">Scan</ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+  <div class="footer">
+    <small>v0.0.1</small><br/>
+    <small>IntelliAcc Systems Pty Ltd &copy; 2021 </small>
+  </div>
+
+</ion-content>

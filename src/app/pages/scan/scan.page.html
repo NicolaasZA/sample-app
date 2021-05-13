@@ -1,0 +1,40 @@
+<ion-content>
+  <div class="top">
+    <strong class="ion-text-uppercase">Place barcode in center</strong>
+  </div>
+
+  <div class="cameraView" #cameraView id="cameraView"></div>
+
+  <div class="bottom">
+    <ion-row>
+
+      <ion-col>
+        <ion-button color="danger" size="small" expand="full" (click)="cancelScan()">
+          <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+
+      <!-- <ion-col>
+        <ion-button color="success" size="small" expand="full" (click)="test()">
+          TEST
+        </ion-button>
+      </ion-col> -->
+
+      <ion-col>
+        <ion-button color="primary" size="small" expand="full" (click)="scanner.switchCamera()">
+          <ion-icon slot="icon-only" [name]="scanner.usingCamera == 'back' ? 'camera-reverse' : 'camera-reverse-outline'"></ion-icon>
+        </ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button [color]="scanner.torchActive ? 'medium' : 'light'" size="small" expand="full" (click)="scanner.toggleFlashlight()">
+          <ion-icon slot="icon-only" color="dark" [name]="scanner.torchActive ? 'flash' : 'flash-outline'"></ion-icon>
+        </ion-button>
+      </ion-col>
+
+    </ion-row>
+  </div>
+
+  <div class="bottom right">
+  </div>
+</ion-content>

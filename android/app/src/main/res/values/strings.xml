@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">IntelliLicense</string>
+    <string name="title_activity_main">IntelliLicense</string>
+    <string name="package_name">com.intelliacc.intellilicense</string>
+    <string name="custom_url_scheme">com.intelliacc.intellilicense</string>
+</resources>

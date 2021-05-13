@@ -1,0 +1,45 @@
+ion-content {
+  overflow: hidden;
+}
+
+.top {
+  position: fixed;
+  top: 60px; // increase to account for notches
+  width: 100vw;
+  text-align: center;
+  z-index: 1001;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 20px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  z-index: 1001;
+
+  ion-row,
+  ion-col {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+.cameraView {
+  background-color: #424242;
+  position: fixed;
+  top: 0px;
+  bottom: 60px;
+  left: 0px;
+  right: 0px;
+  // height: 100%;
+  // width: 100%;
+  // z-index: 500;
+}
+
+ion-button {
+  margin: 0px;
+  opacity: 0.8;
+  min-height: 40px;
+  // width: 100%;
+}
