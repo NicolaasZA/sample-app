@@ -66,7 +66,7 @@ To test the app, add Scandit License keys inside `src/app/services.scanner.servi
 ---
 
 ## IOS (WORKING)
-To get iOS side to function was rather straight-forward. The plugins were installed using the following commands:
+To get iOS side to function was rather straight-forward. I am using `XCode 12.5`
 
 
 Two issues were preventing builds. These were due to Apple API changes.
@@ -81,7 +81,9 @@ Thereafter, iOS builds operate correctly.
 
 ## Android (ISSUES)
 
-This is where the real snag comes. Builds fail right out the gate. Android studio seems to have some trouble configuring the Kotlin intergration.
+This is where the real snag comes. I am using `Android Studio 4.1.3`
+
+Builds fail right out the gate. Android studio seems to have some trouble configuring the Kotlin intergration.
 
 ```
 Caused by: groovy.lang.MissingPropertyException: Could not get unknown property 'kotlin_version' for object of type org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler.
