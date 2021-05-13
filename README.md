@@ -1,5 +1,3 @@
-NOTE: As stated in the email, this is trying to get the Cordova SDK for Scandit to work in a Capacitor project.
-
 # Requirements
 This project was built and tested with the following software versions:
 ```
